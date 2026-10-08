@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VeloSport | Bicicletas & Aventura</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-bicycle"></i>
+                <span>Velo<span>Sport</span></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Quiénes Somos</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button id="modoOscuro" class="dark-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= INICIO ================= -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">VIVE • PEDALEA • SUPERA</p>
+
+            <h1>
+                Tu camino comienza
+                <span>sobre dos ruedas.</span>
+            </h1>
+
+            <p>
+                Descubre bicicletas, accesorios y experiencias deportivas
+                diseñadas para quienes convierten cada ruta en una aventura.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#portafolio" class="btn principal">
+                    Explorar bicicletas
+                </a>
+
+                <a href="#contacto" class="btn secundario">
+                    Contáctanos
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-bike">
+            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1000&q=85"
+                 alt="Bicicleta deportiva">
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOSOTROS ================= -->
+    <section id="nosotros" class="section">
+
+        <div class="section-title">
+            <p>CONÓCENOS</p>
+            <h2>Más que bicicletas, una forma de vivir</h2>
+        </div>
+
+        <div class="about">
+
+            <div class="about-image">
+                <img src="imagenes/bicicleta-genial-estudio_23-2150884288.avif"
+                     alt="Ciclista">
+            </div>
+
+            <div class="about-text">
+
+                <h3>Pedaleamos contigo</h3>
+
+                <p>
+                    En VeloSport creemos que el deporte es una manera de
+                    descubrir nuevos lugares, superar límites y disfrutar
+                    cada momento.
+                </p>
+
+                <p>
+                    Ofrecemos bicicletas deportivas, urbanas y de montaña,
+                    además de accesorios y servicios especializados para
+                    ciclistas de todos los niveles.
+                </p>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>10+</strong>
+                        <span>Años de experiencia</span>
+                    </div>
+
+                    <div>
+                        <strong>500+</strong>
+                        <span>Ciclistas</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Pasión</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PORTAFOLIO ================= -->
+    <section id="portafolio" class="section portfolio">
+
+        <div class="section-title">
+            <p>NUESTRO MUNDO</p>
+            <h2>Bicicletas para cada aventura</h2>
+        </div>
+
+        <div class="cards">
+
+            <article class="bike-card">
+
+                <img src="imagenes/images (1).jfif"
+                     alt="Bicicleta de montaña">
+
+                <div class="card-content">
+                    <span>01</span>
+                    <h3>Mountain Bike</h3>
+                    <p>
+                        Diseñadas para montaña, senderos y terrenos exigentes.
+                    </p>
+                    <button class="details-btn" onclick="mostrarInfo('Mountain Bike')">
+                        Ver más
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="bike-card">
+
+                <img src="imagenes/5f5a246ae6ff30001d4e7f34.webp"
+                     alt="Bicicleta de ruta">
+
+                <div class="card-content">
+                    <span>02</span>
+                    <h3>Road Bike</h3>
+                    <p>
+                        Velocidad, aerodinámica y rendimiento para largas rutas.
+                    </p>
+                    <button class="details-btn" onclick="mostrarInfo('Road Bike')">
+                        Ver más
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="bike-card">
+
+                <img src="https://images.unsplash.com/photo-1529422643029-d4585747aaf2?auto=format&fit=crop&w=800&q=85"
+                     alt="Bicicleta urbana">
+
+                <div class="card-content">
+                    <span>03</span>
+                    <h3>Urban Bike</h3>
+                    <p>
+                        Movilidad, comodidad y estilo para recorrer la ciudad.
+                    </p>
+                    <button class="details-btn" onclick="mostrarInfo('Urban Bike')">
+                        Ver más
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="bike-card">
+
+                <img src="imagenes/tudor-watch-partnership-pro-cycling-team-02-banner-bpxs.avif"
+                     alt="Ciclismo deportivo">
+
+                <div class="card-content">
+                    <span>04</span>
+                    <h3>Ciclismo Pro</h3>
+                    <p>
+                        Equipamiento especializado para entrenamientos y competición.
+                    </p>
+                    <button class="details-btn" onclick="mostrarInfo('Ciclismo Pro')">
+                        Ver más
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DEPORTES ================= -->
+    <section class="sports">
+
+        <div class="section-title">
+            <p>MUÉVETE</p>
+            <h2>Un universo deportivo</h2>
+        </div>
+
+        <div class="sports-grid">
+
+            <div class="sport">
+                <i class="fa-solid fa-person-running"></i>
+                <h3>Running</h3>
+                <p>Supera tus propios límites.</p>
+            </div>
+
+            <div class="sport">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3>Senderismo</h3>
+                <p>Explora nuevos caminos.</p>
+            </div>
+
+            <div class="sport">
+                <i class="fa-solid fa-person-swimming"></i>
+                <h3>Natación</h3>
+                <p>Entrena cuerpo y mente.</p>
+            </div>
+
+            <div class="sport">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Fitness</h3>
+                <p>Construye tu mejor versión.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICIOS ================= -->
+    <section id="servicios" class="section">
+
+        <div class="section-title">
+            <p>LO QUE HACEMOS</p>
+            <h2>Nuestros servicios</h2>
+        </div>
+
+        <div class="services">
+
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Mantenimiento</h3>
+                <p>
+                    Revisión y mantenimiento profesional de bicicletas.
+                </p>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-helmet-safety"></i>
+                <h3>Accesorios</h3>
+                <p>
+                    Cascos, luces, guantes y accesorios para tus rutas.
+                </p>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-route"></i>
+                <h3>Rutas</h3>
+                <p>
+                    Descubre rutas y experiencias para todos los niveles.
+                </p>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Comunidad</h3>
+                <p>
+                    Únete a nuestra comunidad de amantes del deporte.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="contact-section">
+
+        <div class="section-title">
+            <p>HABLEMOS</p>
+            <h2>Contáctanos</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <form id="contactForm">
+
+                <div class="input-group">
+                    <label>Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                </div>
+
+                <div class="input-group">
+                    <label>Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="correo@ejemplo.com">
+                </div>
+
+                <div class="input-group">
+                    <label>Mensaje</label>
+                    <textarea id="mensaje"
+                              rows="5"
+                              placeholder="Escribe tu mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="btn principal">
+                    Enviar mensaje
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Campoalegre,Huila,Colombia&output=embed"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-logo">
+            <i class="fa-solid fa-bicycle"></i>
+            VeloSport
+        </div>
+
+        <p>
+            Vive la aventura. Pedalea tus sueños.
+        </p>
+
+        <div class="social">
+
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 VeloSport. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
